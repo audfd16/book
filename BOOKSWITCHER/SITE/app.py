@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import create_engine
-engine = create_engine('sqlite:///users.db')
+
+
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
@@ -39,7 +39,7 @@ def registration():
         user = Users(username=Username, password=password, email=Email)
         print (Username, Email, password)
 
-        print(engine.url)
+        
         db.session.add(user)
         db.session.commit()
         return redirect('/')
