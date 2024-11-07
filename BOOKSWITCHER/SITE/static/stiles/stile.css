@@ -1,0 +1,54 @@
+.kiwi-maru {
+    font-family: "Kiwi Maru", serif;
+    font-style: normal;
+  }
+  
+ 
+  
+html {
+    max-height: 100vh;
+    background-color: #000;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+
+body { 
+    padding-top: 40vh;
+    min-height: 100vh;
+    margin-left: 5%;
+   
+    
+    
+}
+
+.title {
+   color: white;
+   font-family:  "Kiwi Maru";
+   font-weight: light;
+   margin-bottom: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+}
+
+.schm {
+    width: 30vh;
+    margin-bottom: auto;
+}
+
+.btn {
+    margin-right: 10vh;
+    width: 30vh;
+}
+
+
+
+
+
+

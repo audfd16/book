@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обмен книгами</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stiles/main.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Обмен книгами</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Добавить книгу</a></li>
+                <li><a href="#">Мои книги</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="book-form">
+            <h2>Добавить книгу</h2>
+            <form id="addBookForm">
+                <label for="title">Название книги:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Автор:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="description">Описание:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button type="submit">Добавить книгу</button>
+            </form>
+        </section>
+
+        <section class="book-list">
+            <h2>Книги на обмен</h2>
+            <ul id="books">
+                <!-- Список книг будет добавлен здесь -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Обмен книгами. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
